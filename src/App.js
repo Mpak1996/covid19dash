@@ -1,7 +1,8 @@
 import { Component } from "react";
 import { Box, withStyles } from '@material-ui/core';
 
-import logo from './images/logo2.jpg'
+import logo from './images/logo2.jpg';
+import Cards  from './components/Cards';
 
 const style = {
   container: {
@@ -30,6 +31,7 @@ class App extends Component{
       <Box className={this.props.classes.container}>
          <Box className={this.props.classes.header}>COVID-19 Pandemic Dashboard</Box>
          <img style={{width:480}} src={logo} alt="covid"/>
+         <Cards></Cards>
       </Box>
     )
   }
