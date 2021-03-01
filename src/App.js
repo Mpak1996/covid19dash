@@ -28,7 +28,7 @@ class App extends Component{
   render(){
     return(
       <Box className={this.props.classes.container}>
-         <Box className={this.props.classes.header}>COVID-19 Pandemic</Box>
+         <Box className={this.props.classes.header}>COVID-19 Pandemic Dashboard</Box>
          <img style={{width:480}} src={logo} alt="covid"/>
       </Box>
     )
