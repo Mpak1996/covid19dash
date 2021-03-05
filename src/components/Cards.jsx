@@ -1,13 +1,23 @@
 
+import { Typography, Box, makeStyles } from "@material-ui/core";
 
+const useStyles = makeStyles({
+    component: {
+        margin: "50px 0" // 0 0 0 0
+    },
+    container: {
+        color: "#8ACA2B"
+    }
+})
 
-
-const cards = () => {
-
+const Cards = () => {
+    const classes = useStyles();
     return(
-
-        "Hello"
+        <Box className={classes.component}>
+        <Typography className = {classes.container} variant="h4" gutterBottom>Coronavirus Global Cases</Typography>
+        </Box>
+    
     )
 }
 
-export default cards;
+export default Cards;
