@@ -20,7 +20,7 @@ const CardComponent = ({cardTitle, value, desc, lastUpdate}) => {
                 <Typography variant="h5">
                 <CountUp start={0} end={value} duration={3} seperator=","/>
                 </Typography>
-                <Typography>{desc}</Typography>
+                <Typography color="textSecondary">{desc}</Typography>
                 <Typography>{new Date(lastUpdate).toDateString()}</Typography>
             </CardContent>
         </Grid>

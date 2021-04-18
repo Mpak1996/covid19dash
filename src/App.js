@@ -4,6 +4,8 @@ import { Box, Typography, withStyles } from '@material-ui/core';
 import logo from './images/logo2.jpg';
 import Cards  from './components/Cards';
 import { fetchData } from "./service/api";
+import Countries from "./components/Countries";
+import { fetchCountries } from "./service/api";
 
 const style = {
   container: {
@@ -49,6 +51,7 @@ class App extends Component{
          <Typography className={this.props.classes.lastUpdated}>Last Updated: {data.lastUpdate && new Date(data.lastUpdate).toDateString()}</Typography>
          <img style={{width:480}} src={logo} alt="covid"/>
          <Cards data={data}/>
+         <Countries/>
       </Box>
     )
   }

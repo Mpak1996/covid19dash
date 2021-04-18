@@ -5,10 +5,14 @@ import Card from './Card';
 
 const useStyles = makeStyles({
     component: {
-        margin: "50px 0" // 0 0 0 0
+        margin: "50px 0",
+        flexDirection: "column",
+        alignItems: "center",
+        display: 'flex'  
     },
     container: {
-        color: "#8ACA2B"
+        color: "#8ACA2B",
+        marginBottom: 40
     }
 })
 
