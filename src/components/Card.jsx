@@ -12,9 +12,9 @@ const useStyle = makeStyles({
 const CardComponent = ({cardTitle, value, desc, lastUpdate}) => {
     const classes = useStyle();
     return (
-        <Grid component={Card} style={{margin:20,borderBottom: '10px solid #8ACA2B'}}>
+        <Grid component={Card} style={{margin:20,borderBottom: '10px solid #EA0E00'}}>
             <Box className={classes.header}>
-                <Typography variant="h5" color="textSecondary">{cardTitle}</Typography>
+                <Typography variant="h5" color="black">{cardTitle}</Typography>
             </Box>
             <CardContent>
                 <Typography variant="h5">

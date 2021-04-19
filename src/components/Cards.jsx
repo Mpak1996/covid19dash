@@ -8,10 +8,10 @@ const useStyles = makeStyles({
         margin: "50px 0",
         flexDirection: "column",
         alignItems: "center",
-        display: 'flex'  
+        display: 'flex'
     },
     container: {
-        color: "#8ACA2B",
+        color: "#EA0E00",
         marginBottom: 40
     }
 })

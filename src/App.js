@@ -5,7 +5,7 @@ import logo from './images/logo2.jpg';
 import Cards  from './components/Cards';
 import { fetchData } from "./service/api";
 import Countries from "./components/Countries";
-import { fetchCountries } from "./service/api";
+import Chart from "./components/Chart";
 
 const style = {
   container: {
@@ -34,7 +34,8 @@ const style = {
 class App extends Component{
 
   state={
-    data: {}
+    data: {},
+    country: ''
 
   }
 
@@ -43,6 +44,14 @@ class App extends Component{
     this.setState({data: fetchedData})
     console.log(fetchedData);
   }
+
+
+   handleCountryChange = async(country) => {
+    const fetchedData = await fetchData(country);
+    this.setState({data: fetchedData, country: country})
+    console.log(fetchedData);
+  }
+
   render(){
     const { data } = this.state;
     return(
@@ -51,7 +60,8 @@ class App extends Component{
          <Typography className={this.props.classes.lastUpdated}>Last Updated: {data.lastUpdate && new Date(data.lastUpdate).toDateString()}</Typography>
          <img style={{width:480}} src={logo} alt="covid"/>
          <Cards data={data}/>
-         <Countries/>
+         <Countries handleCountryChange={this.handleCountryChange}/>
+         <Chart data={data}/>
       </Box>
     )
   }
