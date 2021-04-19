@@ -19,9 +19,9 @@ const Countries = ({ handleCountryChange }) => {
 
     return (
         <>
-            <Typography style={{marginBottom: 20}} variant="h5" color="black">Reported Cases or Deaths by Country or Territory</Typography>
+            <Typography style={{marginBottom: 20}} variant="h5" color="black">Reported Cases, Recoveries and Deaths by Country </Typography>
             <NativeSelect onChange = {(e) => handleCountryChange(e.target.value)}>
-                 <option value = "">Greece</option>
+                 <option value = "">Select a Country:</option>
                  {countries.map((country, i) => { 
                   return(
                       <option key={i} value={country}>{country}</option>

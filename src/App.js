@@ -57,7 +57,7 @@ class App extends Component{
     return(
       <Box className={this.props.classes.container}>
          <Box className={this.props.classes.header}>COVID-19 Pandemic Dashboard</Box>
-         <Typography className={this.props.classes.lastUpdated}>Last Updated: {data.lastUpdate && new Date(data.lastUpdate).toDateString()}</Typography>
+         <Typography className={this.props.classes.lastUpdated}>Last Update: {data.lastUpdate && new Date(data.lastUpdate).toDateString()}</Typography>
          <img style={{width:480}} src={logo} alt="covid"/>
          <Cards data={data}/>
          <Countries handleCountryChange={this.handleCountryChange}/>

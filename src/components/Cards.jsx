@@ -34,6 +34,7 @@ const Cards = ({ data: { confirmed, recovered, deaths, lastUpdate }}) => {
                 value={confirmed.value}
                 desc= "Number of Infected Cases of Covid-19"
                 lastUpdate={lastUpdate}
+                
             />
             <Card
                 cardTitle= "Recovered"
