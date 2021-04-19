@@ -4,8 +4,8 @@ import { Box, makeStyles} from '@material-ui/core';
 
 const useStyle = makeStyles({
         container : {
-            width: '75%',
-            marginTop: 20
+            width: '70%',
+            marginTop: 50
 
         }
 }) 
@@ -34,7 +34,7 @@ const Chart = ({ data: { confirmed, recovered, deaths}}) => {
                 }}
                     options = {{
                         legend: {display: false},
-                        title: {display:true, text: 'Current state in Country'}
+                        title: {display:true, text: 'Covid-19 Graph'}
 
                     }}
                 
